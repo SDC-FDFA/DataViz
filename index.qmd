@@ -1,0 +1,147 @@
+---
+title: "SDC Data Visualization Guidelines"
+subtitle: "Working document"
+author: "Cedric Vidonne"
+date: today
+format:
+  html:
+    theme: [default, custom.scss]
+    embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+source("R/palettes.R")
+source("R/helpers.R")
+```
+
+## Colours
+
+The palettes below are for **encoding data only** — bars, lines, pie slices, map areas. Colours for chart *elements* (axes, gridlines, labels) are handled
+separately, later.
+
+Every palette is shown at **7 colours** so the full set is visible. In practice a categorical palette stays readable up to about **5–6 categories**; beyond that, colours become hard to tell apart, including for colour-blind readers.
+
+### Current palette
+
+The categorical palette from the EDA strategy — our starting point and baseline for comparison.
+
+```{r}
+#| label: current-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "current")
+```
+
+### OKLCH
+
+Built on a perceptual lightness staircase in OKLCH: same teal and pinkred anchors, with the light-pink and pure red swapped for a blue and a violet. 
+
+**Pro:** even lightness, more colour-blind-robust, works in black & white. 
+
+**Con:** slightly more muted — loses some of the current palette's .
+
+```{r}
+#| label: oklch-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "oklch")
+```
+
+### Bright one
+
+The same hues pushed higher in chroma for a livelier, near-neon feel. 
+
+**Pro:** punchy and high-energy, strong on screen. 
+
+**Con:** reads less institutional and can strain the eye in large filled areas.
+
+```{r}
+#| label: bright-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "bright")
+```
+
+### GPT one
+
+A muted, earthy take: desaturated naturals (brown, gold, olive) alongside the teal and pinkred anchors. 
+
+**Pro:** soft, cohesive, easy on the eye for large filled areas. 
+
+**Con:** lower chroma makes some hues harder to tell apart at small sizes, and it feels less lively.
+
+```{r}
+#| label: gpt-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "gpt")
+```
+
+### Claude one
+
+Similar earthy direction, but engineered so every colour clears a minimum contrast on white and the lightness steps stay ordered. 
+
+**Pro:** accessible and well-balanced, dependable across chart types. 
+
+**Con:** the darker, contrast-driven hues compress the range and can look a little sober. 
+
+```{r}
+#| label: claude-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "claude")
+```
+
+### Warm one
+
+Leans warm: two or three neighbouring hot hues (brick, pinkred, orange, gold) before spreading to cool accents.
+
+**Pro:** cohesive, warm identity. 
+
+**Con:** the warm cluster risks similar lightness, reducing how many colours truly stand apart.
+
+```{r}
+#| label: warm-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "warm")
+```
+
+### Cool one
+
+The mirror of warm — anchored in blues, greens and teal, with warm colours only as accents. 
+
+**Pro:** calm and institutional. 
+
+**Con:** the cool cluster can look samey and less energetic.
+
+```{r}
+#| label: cool-palette
+#| echo: false
+#| fig-width: 8
+#| fig-height: 1.7
+#| fig-align: center
+show_palette(palettes, "cool")
+```
+
+
+
+## Typography
+
+## Layout
+
+## Icons
