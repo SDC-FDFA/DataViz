@@ -6,7 +6,8 @@ date: today
 format:
   html:
     theme: [default, custom.scss]
-    embed-resources: true
+  typst: 
+    papersize: a4
 ---
 
 ```{r}
