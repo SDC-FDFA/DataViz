@@ -61,6 +61,7 @@ Sequential palettes based on the OKLCH approach for categorical.
 ```{r}
 #| label: seq
 #| echo: false
+#| message: false
 #| fig-width: 8
 #| fig-height: 1.7
 #| fig-align: center
