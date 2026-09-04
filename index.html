@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Cedric Vidonne">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-09-04">
 
 <title>SDC Data Visualization Guidelines</title>
 <style>
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 18, 2026</p>
+      <p class="date">September 4, 2026</p>
     </div>
   </div>
   
@@ -117,80 +117,111 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="bright-one" class="level3">
-<h3 class="anchored" data-anchor-id="bright-one">Bright one</h3>
-<p>The same hues pushed higher in chroma for a livelier, near-neon feel.</p>
-<p><strong>Pro:</strong> punchy and high-energy, strong on screen.</p>
-<p><strong>Con:</strong> reads less institutional and can strain the eye in large filled areas.</p>
+<section id="sequentials" class="level3">
+<h3 class="anchored" data-anchor-id="sequentials">Sequentials</h3>
+<p>Sequential palettes based on the OKLCH approach for categorical.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'chroma'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:ggplot2':
+
+    alpha, scale_color_viridis_c, scale_color_viridis_d,
+    scale_colour_viridis_c, scale_colour_viridis_d,
+    scale_fill_viridis_c, scale_fill_viridis_d</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:grDevices':
+
+    hcl, hsv, rgb</code></pre>
+</div>
+</div>
+<section id="teal" class="level4">
+<h4 class="anchored" data-anchor-id="teal">Teal</h4>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/bright-palette-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+<p><img src="index_files/figure-html/seq-teal-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="gpt-one" class="level3">
-<h3 class="anchored" data-anchor-id="gpt-one">GPT one</h3>
-<p>A muted, earthy take: desaturated naturals (brown, gold, olive) alongside the teal and pinkred anchors.</p>
-<p><strong>Pro:</strong> soft, cohesive, easy on the eye for large filled areas.</p>
-<p><strong>Con:</strong> lower chroma makes some hues harder to tell apart at small sizes, and it feels less lively.</p>
+<section id="magenta" class="level4">
+<h4 class="anchored" data-anchor-id="magenta">Magenta</h4>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/gpt-palette-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+<p><img src="index_files/figure-html/seq-magenta-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="claude-one" class="level3">
-<h3 class="anchored" data-anchor-id="claude-one">Claude one</h3>
-<p>Similar earthy direction, but engineered so every colour clears a minimum contrast on white and the lightness steps stay ordered.</p>
-<p><strong>Pro:</strong> accessible and well-balanced, dependable across chart types.</p>
-<p><strong>Con:</strong> the darker, contrast-driven hues compress the range and can look a little sober.</p>
+<section id="orange" class="level4">
+<h4 class="anchored" data-anchor-id="orange">Orange</h4>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/claude-palette-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+<p><img src="index_files/figure-html/seq-orange-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="warm-one" class="level3">
-<h3 class="anchored" data-anchor-id="warm-one">Warm one</h3>
-<p>Leans warm: two or three neighbouring hot hues (brick, pinkred, orange, gold) before spreading to cool accents.</p>
-<p><strong>Pro:</strong> cohesive, warm identity.</p>
-<p><strong>Con:</strong> the warm cluster risks similar lightness, reducing how many colours truly stand apart.</p>
+<section id="yellow" class="level4">
+<h4 class="anchored" data-anchor-id="yellow">Yellow</h4>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/warm-palette-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+<p><img src="index_files/figure-html/seq-yellow-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="cool-one" class="level3">
-<h3 class="anchored" data-anchor-id="cool-one">Cool one</h3>
-<p>The mirror of warm — anchored in blues, greens and teal, with warm colours only as accents.</p>
-<p><strong>Pro:</strong> calm and institutional.</p>
-<p><strong>Con:</strong> the cool cluster can look samey and less energetic.</p>
+<section id="green" class="level4">
+<h4 class="anchored" data-anchor-id="green">Green</h4>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/cool-palette-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+<p><img src="index_files/figure-html/seq-green-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="blue" class="level4">
+<h4 class="anchored" data-anchor-id="blue">Blue</h4>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/seq-blue-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="purple" class="level4">
+<h4 class="anchored" data-anchor-id="purple">Purple</h4>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/seq-purple-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 <section id="typography" class="level2">

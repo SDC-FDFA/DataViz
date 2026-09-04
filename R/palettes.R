@@ -22,7 +22,7 @@ palettes <- tribble(
   "oklch"   , 2L        , "#d14160" ,
   "oklch"   , 3L        , "#d97230" ,
   "oklch"   , 4L        , "#d8b501" ,
-  "oklch"   , 5L        , "#3e7d2f" ,
+  "oklch"   , 5L        , "#3f7a35" ,
   "oklch"   , 6L        , "#175d9b" ,
   "oklch"   , 7L        , "#6a3166" ,
   # On the bright neon side
